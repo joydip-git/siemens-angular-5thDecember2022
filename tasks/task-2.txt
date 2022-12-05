@@ -1,0 +1,16 @@
+1. create some sample employee objects, where each employee will consist of following properties:
+
+	value properties:
+	name (string), id (number), basic (number), da (number), hra (number)
+
+	functional property:
+	calculateSalary: to calculate total salary of an employee object by just adding basic, da and hra values
+		arguments: NA
+		return type: number
+
+2. create an array to add those sample objects
+3. filter the array of employees, based on the total salary, where the total salary is more than 5000. 
+4.display the name and total salary of those employees from the filtered array
+	hint: use built-in methods of array: push() for 2, filter() for 3 and forEach() method for 4
+	
+	
