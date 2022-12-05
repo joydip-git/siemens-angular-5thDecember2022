@@ -21,3 +21,20 @@ HTML Tag
     <h1>Times of India</h1>
 	</body>
 	without any content - empty tag (<br />)
+
+*.scss/.sass (SASS => simply awesome stylesheet) 
+install SASS (CSS pre-processor)
+.scss/.sass  => CSS file
+
+.centerStyle{
+}
+
+.divStyle extends centerStyle{
+}
+
+highest to lowest:
+1. in-line style
+2. outline style (style tag and separate CSS file)
+3. browser style
+
+
