@@ -1,0 +1,6 @@
+1. JavaScript
+2. JavaScript new features
+3. TypeScript
+4. Node JS (server side framework)
+5. Client side framework to create web app
+6. Angular 
