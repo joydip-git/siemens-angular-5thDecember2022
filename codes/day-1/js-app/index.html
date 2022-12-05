@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="joydip" />
+    <title>
+        Home
+    </title>
+    <!--outline styling, using separate style file-->
+    <link rel="stylesheet" href="./index.css">
+
+    <!--outline styling, using style tag in the same HTML file-->
+    <!--
+    <style>
+        /* element selector*/
+        h2 {
+            text-align: center;
+            background-color: bisque;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /*button {
+            background-color: burlywood;
+            width: 100px;
+            height: 30px;
+        }*/
+
+        /* id selector*/
+        #btnClick {
+            background-color: burlywood;
+            width: 100px;
+            height: 30px;
+        }
+
+        /*class selector*/
+        .centerStyle {
+            text-align: center;
+        }
+
+        .fontStyle {
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    -->
+</head>
+
+<body>
+    <!--inline styling-->
+    <!-- <h2
+        style="  text-align: center;         background-color: bisque;           font-family: 'Courier New', Courier, monospace;">
+        Home Page
+    </h2> -->
+    <h2> Home Page </h2>
+    <br>
+    <div class="centerStyle fontStyle">
+        Click the button below
+        <br>
+        <!--  <button onclick="clicked()" style=" background-color: burlywood;
+            width: 100px;
+            height: 30px;">Click</button> -->
+        <button id="btnClick" onclick="clicked()">Click</button>
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+
+</html>

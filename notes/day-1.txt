@@ -4,3 +4,20 @@
 4. Node JS (server side framework)
 5. Client side framework to create web app
 6. Angular 
+
+s/w:
+Node JS
+Visual Studio Code
+
+angular-training
+
+HTML: web page designing 
+JS: coding
+CSS: (Cascading stylesheet) styling
+css-prop:value;
+HTML Tag
+	Content - another tag or some textual value
+	<body>
+    <h1>Times of India</h1>
+	</body>
+	without any content - empty tag (<br />)

@@ -1,0 +1,28 @@
+/* element selector*/
+h2 {
+  text-align: center;
+  background-color: bisque;
+  font-family: "Courier New", Courier, monospace;
+}
+/*button {
+            background-color: burlywood;
+            width: 100px;
+            height: 30px;
+        }*/
+
+/* id selector*/
+#btnClick {
+  background-color: burlywood;
+  width: 100px;
+  height: 30px;
+}
+
+/*class selector*/
+.centerStyle {
+  text-align: center;
+}
+
+.fontStyle {
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
