@@ -1,0 +1,9 @@
+1. create an application
+	- with four function: add, subtract, divide and multiply (two arguments of type number and returns a number type after calculation)
+	- print a menu (alert function of window)
+	- prompt user to enter a choice (1/2/3/4)
+	- based on that choice invoke one of the functions
+	- accept the values for calculation from user (using prompt)
+	- print the output using console.log/window.alert
+
+	

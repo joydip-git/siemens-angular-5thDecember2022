@@ -37,4 +37,20 @@ highest to lowest:
 2. outline style (style tag and separate CSS file)
 3. browser style
 
+JavaScript:
+	- a scripting language
+	- a dynamic language (compiltaion and execution happens during runtime)
+	- object-based language
+	- loosely typed language (we don't use strictly typed data)
+
+JS types of data:
+	- number (fractional and non-fractional)
+	- boolean
+	- string
+	- object
+	- function
+
+keyords: undefined, null, NaN, infinity
+operators: typeof, instanceof
+
 
