@@ -1,1 +1,10 @@
-1. objects in JS
+1. objects in JS using constructor function
+2. new features in JS
+3. Angular
+
+JS execution:
+	1. preparation stage
+	2. execution stage
+
+global function/scope:
+	entire code in a single JS file is written inside a global (main) function which is invoked automatically
