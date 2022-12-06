@@ -1,4 +1,4 @@
-var anilObject = {
+/*var anilObject = {
     name: 'anil',
     id: 1,
     basic: 1000,
@@ -41,5 +41,15 @@ var ramnathObject = {
         return this.basic + this.da + this.hra
     }
 }
-
-var employees = [anilObject, sunilObject, vinodObject, ramnathObject]
+*/
+function employee(name, id, basic, da, hra) {
+    this.name = name
+    this.id = id
+    this.basic = basic
+    this.da = da
+    this.hra = hra
+    this.totalSalary = 0
+}
+employee.prototype.calculateSalary = function () {
+    this.totalSalary = this.basic + this.da + this.hra
+}
