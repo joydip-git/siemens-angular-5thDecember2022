@@ -8,3 +8,10 @@ JS execution:
 
 global function/scope:
 	entire code in a single JS file is written inside a global (main) function which is invoked automatically
+
+ECMAScript
+ES - 2, 3, 5 (vanilla JS)
+2015 - ES6 
+			=> class, constructor, super, extends
+		- 
+
