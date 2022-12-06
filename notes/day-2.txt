@@ -22,3 +22,35 @@ ES - 2, 3, 5 (vanilla JS)
 			=> string template/templated string/string interpolation
 			=> arrow function
 
+global path (3rd paty tools):
+C:\Users\ghosh\AppData\Roaming\npm
+
+nodejs: C:\Program Files\nodejs
+
+
+Angular:
+	component (design+code) => @Component() export class SomeComponent{}
+	directive (code) => @Directive() export class SomeDirective{}
+	pipe (code) => @Pipe() export class SomePipe{}
+	service (code) => @Injectable() export class SomeService{}
+	module (code) => @NgModule() export class SomeModule{}
+
+	decorator function:
+		class (@Component(), @Directive(), @Pipe(), @Injectable(), @NgModule())
+		properties => @Input(), @output()
+		function arguments => @Inject()
+
+
+resturant module
+		2/3, 2/3, 2/3 2/3
+cart module
+		c1, c2
+		declarations:[C1]
+		exports:[C1]
+
+order module => import cart module
+		imports:[CartModule]
+		O1 => <app-c1></app-c1>
+payment module
+delivery module
+user account module
