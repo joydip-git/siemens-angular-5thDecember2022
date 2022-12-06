@@ -11,7 +11,14 @@ global function/scope:
 
 ECMAScript
 ES - 2, 3, 5 (vanilla JS)
+--------------------------------------------------------------------------
 2015 - ES6 
 			=> class, constructor, super, extends
-		- 
+			=> block scoping using let keyword
+			=> declaring constant variable		
+			=> object and array destructuring
+			=> spread operator
+			=> rest operator
+			=> string template/templated string/string interpolation
+			=> arrow function
 
