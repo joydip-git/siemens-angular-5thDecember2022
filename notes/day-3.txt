@@ -58,3 +58,66 @@ DI:
 
 	Angular provides different injectors at every level
 	
+
+src>app>
+		products>
+				components
+					add-product>[add-product.component.ts/.html/.css/.spec.ts]
+					view-product>[view-product.component.ts/.html/.css/.spec.ts]
+					product-list>[product-list.component.ts/html/css/.spec.ts]
+
+				services
+					products.service.ts
+
+				pipes
+					product-filter.pipe.ts
+
+				products.module.ts
+
+ng cli tool:
+component:
+>ng g c products/components/add-product --skip-tests
+>ng generate component products/components/product-list --skip-tests
+
+module:
+>ng generate module products 
+
+service
+>ng g s products/services/product --skip-tests
+
+
+URL List:
+---------------------------------------------------------------------------
+GET http://localhost:3000/products		NA			array of product objects
+GET http://localhost:3000/products/id	id			a product object
+
+ngIf, ngIfElse, ngClass, ngStyle
+package name: @angular/common
+module name: CommonModule
+
+ngModel, ngForm, FormControl, FormGroup, FormBuilder
+package name: @angular/forms
+module name: FormsModule
+
+formControl, formControlName, formGroup, formGroupName etc.
+package name: @angular/forms
+module name: ReactiveFormsModule
+
+HttpClient: 
+		- a built-in service class (@angular/common/http) which provides several methods so that you can perform HTTP requests
+		- in your service class request for dependency injection
+		- import HttpClientModule and register the same in "imports" array in your module, which provides provider for HttpClient service class
+
+package name: @angular/common/http
+module name: HttpClientModule
+
+@Injectable(): mark any asset with this decorator, which requires DI
+
+Note: If a component, directive, module, pipe demands for DI, you don't need to mark them with @Injetable(), since those decorators (@Component, @Directive, @Pipe, @NgModule all) implemenmt/inherit from @Injectable
+On;ly in case of service, you need @Injectable() since generally services classes are not marked with any other decorator
+
+
+
+
+
+
