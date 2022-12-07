@@ -5,12 +5,16 @@ import { ViewProductComponent } from './components/view-product/view-product.com
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { ProductService } from './services/product.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductRowsComponent } from './components/product-rows/product-rows.component';
+import { LowercaseTransformerPipe } from './pipes/lowercase-transformer.pipe';
 
 @NgModule({
   declarations: [
     ProductListComponent,
     ViewProductComponent,
-    AddProductComponent
+    AddProductComponent,
+    ProductRowsComponent,
+    LowercaseTransformerPipe
   ],
   imports: [
     CommonModule, HttpClientModule

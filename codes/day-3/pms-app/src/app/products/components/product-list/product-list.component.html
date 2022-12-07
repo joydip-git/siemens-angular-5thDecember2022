@@ -10,28 +10,8 @@
 <div *ngIf="loadingComplete;else loadingTemplate">
     <div *ngIf="errorMessage==='';else errorTemplate">
         <div *ngIf="products; else noDataTemplate">
-            <table>
-                <thead class="headerStyle">
-                    <tr>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Rating</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let p of products">
-                        <td>
-                            <div>
-                                <img [src]="p.imageUrl" alt="NA" [title]="p.productName" class="imgStyle">
-                            </div>
-                        </td>
-                        <td>{{p.productName}}</td>
-                        <td>{{p.price}}</td>
-                        <td>{{p.starRating}}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <app-product-rows [productsData]="products" (deleted)="onDeletion($event)">
+            </app-product-rows>
         </div>
     </div>
 </div>

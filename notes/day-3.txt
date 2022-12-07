@@ -121,6 +121,26 @@ Reactive Extensions: APIs for asynchronous programming, based on observer patter
 Note:
 on a single element do not use mor ethan one structural directive, because Angular do not have the capacity to understand the order of usage of those directive
 
+component lifecycle and hooks:
+1. creation:
+		a. constructor
+		b. changes (only when from parent this component receives data)
+		b. init => OnInit => ngOnInit method (one time)
+
+2. updation:
+		changes => OnChanges => ngOnChanges method (only when from parent this component receives data)
+
+event	interface		method
+------------------------------
+X			OnX				ngOnX
+
+3. desctruction:
+	destroy => OnDestroy => ngOnDestroy method
+
+transform(value,...args){
+	return	value.toUpper()
+}
+
 
 
 

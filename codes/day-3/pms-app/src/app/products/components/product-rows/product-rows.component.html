@@ -1,0 +1,28 @@
+<table>
+    <thead class="headerStyle">
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of productArray">
+            <td>
+                <div>
+                    <img [src]="p.imageUrl" alt="NA" [title]="p.productName" class="imgStyle">
+                </div>
+            </td>
+            <td>{{p.productName|uppercase}}</td>
+            <td>{{p.productCode|lower}}</td>
+            <td>{{p.price|currency:'INR'}}</td>
+            <td>{{p.starRating}}</td>
+            <td>
+                <button type="button" (click)="deleteProduct(p.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
