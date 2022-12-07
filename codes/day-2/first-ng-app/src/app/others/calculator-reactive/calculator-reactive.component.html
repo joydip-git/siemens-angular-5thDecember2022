@@ -1,0 +1,17 @@
+<div *ngIf="calculatorForm">
+    <form [formGroup]="calculatorForm" (submit)="add()">
+        <div>
+            <label for="txtFirst">First:&nbsp;</label>
+            <input type="text" id="txtFirst" name="first" placeholder="enter first value" formControlName="first" />
+        </div>
+        <div>
+            <label for="txtSecond">Second:&nbsp;</label>
+            <input type="text" id="txtSecond" name="second" placeholder="enter second value" formControlName="second">
+        </div>
+        <div>
+            <input type="submit" value="Add">
+        </div>
+    </form>
+    <br>
+    <span>Result:&nbsp;{{addResult}}</span>
+</div>

@@ -35,3 +35,26 @@ class X{}
 Forms in Angular:
 	a. template driven form: tenmplates control everything (update controls with values from code, update code by passing control values) about a form by using certain directives like ngModel (creates a FormControl) and ngForm (creates a FormGroup). You don't have direct access top those underlying objects. this is not easy to test.
 	b. Reactive Forms: everything about a form is controlled from code by directly accessing FormGroup, FormControl etc. this is easy to test. 
+
+
+DI:
+	Angular creates instances of service
+	Angular needs a provider for that service
+	Angular uses an Injector to inject the reference of the created object of the service class
+	Angular maintains the object lifecycle
+	
+	who needs the DI?
+	a. an asset only 
+			register at the asset level
+			an object will created to be used by that asset and that asset only
+	
+	b. assets of a module
+			register at the that module level
+			an object will created to be used by all the assets of that module and that module ONLY
+
+	c. assets from different modules in the entire application
+			register at the that root module level
+			an object will created to be used by all the assets of that application
+
+	Angular provides different injectors at every level
+	

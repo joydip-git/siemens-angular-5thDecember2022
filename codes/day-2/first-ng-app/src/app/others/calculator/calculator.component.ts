@@ -1,10 +1,12 @@
 import { Component } from "@angular/core";
 import { NgForm } from "@angular/forms";
+import { CalculationService } from "src/app/services/calcuation.service";
 
 @Component({
     selector: 'app-calculator',
     templateUrl: './calculator.component.html',
-    styleUrls: ['./calculator.component.css']
+    styleUrls: ['./calculator.component.css'],
+    //providers: [CalculationService]
 })
 export class CalculatorComponent {
     firstValue = ''
@@ -22,8 +24,11 @@ export class CalculatorComponent {
     // updateSecond(s: string) {
     //     this.secondValue = Number(s)
     // }
+    constructor(private _calcSvcRef: CalculationService) {
+
+    }
     add(frm: NgForm) {
         console.log(frm)
-        this.addResult = Number(this.firstValue) + Number(this.secondValue)
+        this.addResult = this._calcSvcRef.add(Number(this.firstValue), Number(this.secondValue))
     }
 }
