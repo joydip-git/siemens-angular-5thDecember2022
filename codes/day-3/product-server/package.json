@@ -1,0 +1,15 @@
+{
+  "name": "product-server",
+  "version": "1.0.0",
+  "description": "simple product server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./data/products.json"
+  },
+  "keywords": [],
+  "author": "joydip",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
