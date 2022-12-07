@@ -116,6 +116,12 @@ module name: HttpClientModule
 Note: If a component, directive, module, pipe demands for DI, you don't need to mark them with @Injetable(), since those decorators (@Component, @Directive, @Pipe, @NgModule all) implemenmt/inherit from @Injectable
 On;ly in case of service, you need @Injectable() since generally services classes are not marked with any other decorator
 
+Reactive Extensions: APIs for asynchronous programming, based on observer pattern
+
+Note:
+on a single element do not use mor ethan one structural directive, because Angular do not have the capacity to understand the order of usage of those directive
+
+
 
 
 

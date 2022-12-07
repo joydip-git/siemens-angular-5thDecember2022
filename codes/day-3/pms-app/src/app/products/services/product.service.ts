@@ -23,6 +23,6 @@ export class ProductService {
 
   }
   getProducts() {
-    this._http.get(this.url)
+    return this._http.get(this.url)
   }
 }

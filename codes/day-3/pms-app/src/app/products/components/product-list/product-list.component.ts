@@ -8,7 +8,25 @@ import { ProductService } from '../../services/product.service';
 })
 export class ProductListComponent {
   products?: any[];
+  errorMessage = ''
+  loadingComplete = false
+
   constructor(private _productService: ProductService) {
-    this._productService.getProducts()
+    const obs = this._productService.getProducts()
+    obs.subscribe({
+      next: (resp) => {
+        this.products = resp as any[]
+        this.errorMessage = ''
+        this.loadingComplete = true
+      },
+      error: (err) => {
+        this.products = undefined
+        this.errorMessage = err.message
+        this.loadingComplete = true
+      },
+      // complete: () => {
+      //   console.log('completed')
+      // }
+    })
   }
 }
