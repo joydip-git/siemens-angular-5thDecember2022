@@ -1,8 +1,9 @@
 import { NgModule } from "@angular/core";
+import { CalculatorComponent } from "./calculator/calculator.component";
 import { SampleComponent } from "./sample/sample.component";
 
 @NgModule({
-    declarations: [SampleComponent],
+    declarations: [SampleComponent, CalculatorComponent],
     providers: [],
     imports: [],
     exports: [SampleComponent],

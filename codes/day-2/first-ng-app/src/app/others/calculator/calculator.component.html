@@ -1,13 +1,17 @@
 <form>
     <div>
         <label for="txtFirst">First:&nbsp;</label>
-        <input type="text" id="txtFirst" name="first" placeholder="enter first value">
+        <input type="text" id="txtFirst" name="first" placeholder="enter first value" value="{{firstValue}}"
+            #firstInput>
     </div>
     <div>
         <label for="txtSecond">Second:&nbsp;</label>
-        <input type="text" id="txtSecond" name="second" placeholder="enter second value">
+        <input type="text" id="txtSecond" name="second" placeholder="enter second value" value="{{secondValue}}"
+            #secondInput>
     </div>
     <div>
-        <input type="button" value="Add">
+        <input type="button" value="Add" (click)="add(firstInput.value, secondInput.value)">
     </div>
 </form>
+<br>
+<span>Result:&nbsp;{{addResult}}</span>
