@@ -1,16 +1,19 @@
-<form>
+<form ngForm (ngSubmit)="add(frm)" #frm="ngForm">
     <div>
         <label for="txtFirst">First:&nbsp;</label>
-        <input type="text" id="txtFirst" name="first" placeholder="enter first value" value="{{firstValue}}"
-            #firstInput>
+        <!-- <input type="text" id="txtFirst" name="first" placeholder="enter first value" [value]="firstValue"
+            (change)="updateFirst(firstInput.value)" #firstInput> -->
+        <input type="text" id="txtFirst" name="first" placeholder="enter first value" [(ngModel)]="firstValue" />
     </div>
     <div>
         <label for="txtSecond">Second:&nbsp;</label>
-        <input type="text" id="txtSecond" name="second" placeholder="enter second value" value="{{secondValue}}"
-            #secondInput>
+        <!-- <input type="text" id="txtSecond" name="second" placeholder="enter second value" [value]="secondValue"
+            (change)="updateSecond(secondInput.value)" #secondInput> -->
+        <input type="text" id="txtSecond" name="second" placeholder="enter second value" [(ngModel)]="secondValue">
     </div>
     <div>
-        <input type="button" value="Add" (click)="add(firstInput.value, secondInput.value)">
+        <!-- <input type="button" value="Add" (click)="add(firstInput.value, secondInput.value)"> -->
+        <input type="submit" value="Add">
     </div>
 </form>
 <br>

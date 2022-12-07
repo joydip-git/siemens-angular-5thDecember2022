@@ -1,4 +1,5 @@
 binding:
+One-way
 	1. passing data from code to view => data binding
 		 a. interpolation
 				code: data = 10
@@ -10,6 +11,27 @@ binding:
 				view: <element (event-name)="method_in_code(data)">
 				code: method_in_code(data:any){}
 
+Two-way:
+	[(ngModel)]="prop-name"
+	[value]="prop-name"
+	(changes)=>prop-name
+
 
 Template reference variable:
 <element #ele>
+
+Directive: to be used as custom attribute of an element, extending the behavior of that element
+	<element ngModel/>
+
+@Directive({
+		name:['ngModel']
+})
+class X{}
+
+	a. attribute directive: ngModel, ngClass, ngStyle, etc...
+	b. structural directive: ngFor, ngIf, ngIfElse, etc...
+	c. component directive: component (view+code)=> used as custom HTML tag
+
+Forms in Angular:
+	a. template driven form: tenmplates control everything (update controls with values from code, update code by passing control values) about a form by using certain directives like ngModel (creates a FormControl) and ngForm (creates a FormGroup). You don't have direct access top those underlying objects. this is not easy to test.
+	b. Reactive Forms: everything about a form is controlled from code by directly accessing FormGroup, FormControl etc. this is easy to test. 
