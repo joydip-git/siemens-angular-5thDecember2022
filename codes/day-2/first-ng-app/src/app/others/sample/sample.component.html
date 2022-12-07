@@ -1,0 +1,12 @@
+<h2>
+    {{title}}
+</h2>
+<br>
+<div>
+    <label for="txtTitle">Enter Title:&nbsp;</label>
+    <input type="text" value="{{title}}" placeholder="enter new title here" id="txtTitle" #titleinput
+        [style.width.px]="width">
+    <!-- <input type="text" [value]="title" placeholder="enter new title here" id="txtTitle" #titleinput> -->
+    <br>
+    <button type="button" (click)="updateTitle(titleinput.value)">Update</button>
+</div>

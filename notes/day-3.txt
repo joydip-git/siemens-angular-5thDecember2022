@@ -1,0 +1,15 @@
+binding:
+	1. passing data from code to view => data binding
+		 a. interpolation
+				code: data = 10
+				view: {{data}}
+		b. property binding
+				code: data = 10
+				view: <element [value]="data">
+	2. passing data from view to code => event binding
+				view: <element (event-name)="method_in_code(data)">
+				code: method_in_code(data:any){}
+
+
+Template reference variable:
+<element #ele>
